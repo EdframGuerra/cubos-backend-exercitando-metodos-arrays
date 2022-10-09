@@ -7,23 +7,15 @@
 // distribbuir os nomes nos grupos;
 
 
-const nomes = ['Juninho', 'Vidal', 'Guido', 'Dani', 'Ruli', 'Diego'];
+const nomes = ['Juninho', 'Vidal', 'Guido', 'Dani', 'Ruli', 'Diego', 'ando', 'peco', 'yan'];
 const tamanhoDoGrupo = 4;
 
 function divisãoDeGrupos(nomes, tamanhoDoGrupo) {
-    let grupo1 = nomes.slice(0, 4);
-    let grupo2 = nomes.slice(4);
+    let grupo1 = nomes.slice(0, tamanhoDoGrupo);
+    let grupo2 = nomes.slice(tamanhoDoGrupo,);
 
-
-    // for (let item of nomes) {
-    //     if (item >= tamanhoDoGrupo) {
-    //         grupo1.push(item)
-    //     } else {
-    //         grupo2.push(item);
-    //     }
-    // }
     console.log(`Grupo 1: ${grupo1.join(", ")}`);
     console.log(`Grupo 2: ${grupo2.join(", ")}`);
 }
 
-divisãoDeGrupos(nomes, 4);
+divisãoDeGrupos(nomes, 6);
